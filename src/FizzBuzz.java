@@ -10,18 +10,17 @@ class FizzBuzz {
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
             boolean divisibleBy5 = i % 5 == 0;
-            doFizzBuzz result = new doFizzBuzz(divisibleBy3, divisibleBy5);
 
             // Print our appropriate result.
-            if (result.divisibleBy3() && result.divisibleBy5()) {
+            if (divisibleBy3 && divisibleBy5) {
 
                 System.out.println("Fizz Buzz");
 
-            } else if (result.divisibleBy3()) {
+            } else if (divisibleBy3) {
 
                 System.out.println("Fizz");
 
-            } else if (result.divisibleBy5()) {
+            } else if (divisibleBy5) {
 
                 System.out.println("Buzz");
 
@@ -33,6 +32,6 @@ class FizzBuzz {
         }
     }
 
-    private record doFizzBuzz(boolean divisibleBy3, boolean divisibleBy5) {
+    public static void doFizzBuzz(int i) {
     }
 }
