@@ -8,6 +8,6 @@ public class Multiples {
                 count = count + 1;
             }
             i++;
-        } System.out.println(i);
+        } System.out.println(count);
     }
 }
